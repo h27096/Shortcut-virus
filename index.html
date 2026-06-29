@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>sender</title>
+    <title>info Sender</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,.2);
+            width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 250px;
+            font-size: 22px;
+            padding: 15px;
+            border-radius: 10px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 20px;
+            font-size: 24px;
+            border: none;
+            border-radius: 10px;
+            background: #0078ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fcc;
+        }
+    </style>
 </head>
 <body>
-  <h1>Send info</h1>
 
-  <form action="https://formspree.io/f/mlgyldoe" method="POST">
-    <textarea name="message" placeholder="Type text here..." required></textarea>
-    <br><br>
-    <button type="submit">Send</button>
-  </form>
+<div class="container">
+    <h1>send info</h1>
+
+    <form action="https://formspree.io/f/mlgyldoe" method="POST">
+        <textarea name="message" placeholder="Type your message..."></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
 </body>
 </html>
